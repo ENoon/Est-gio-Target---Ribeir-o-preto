@@ -10,7 +10,6 @@ class Program
 
         if (n == a || n == b) return true;
 
-
         while (b < n)
         {
             int temp = a;
@@ -18,17 +17,14 @@ class Program
             b = temp + b;
         }
 
-
         return b == n;
     }
 
     static void Main()
     {
         Console.Write("Digite um número para verificar se pertence à sequência de Fibonacci: ");
-
         if (int.TryParse(Console.ReadLine(), out int number))
         {
-
             if (IsFibonacci(number))
             {
                 Console.WriteLine($"O número {number} pertence à sequência de Fibonacci.");
